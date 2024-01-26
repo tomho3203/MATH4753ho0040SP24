@@ -1,8 +1,8 @@
 #' A quadratic function
 #'
-#' @param x a numeric vector
+#' @param x a numeric vector.
 #'
-#' @return a numeric vector
+#' @return a numeric vector.
 #' @export
 #'
 #' @examples
