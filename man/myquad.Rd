@@ -7,10 +7,10 @@
 myquad(x)
 }
 \arguments{
-\item{x}{a numeric vector}
+\item{x}{a numeric vector.}
 }
 \value{
-a numeric vector
+a numeric vector.
 }
 \description{
 A quadratic function
