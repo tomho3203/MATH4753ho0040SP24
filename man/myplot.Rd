@@ -16,5 +16,5 @@ numeric vector
 Myplot function
 }
 \examples{
-myplot(3) = 5.022557
+myplot(3)
 }

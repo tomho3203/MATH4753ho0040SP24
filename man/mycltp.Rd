@@ -13,7 +13,7 @@ mycltp(n, iter, lambda = 10, ...)
 
 \item{lambda}{a integer}
 
-\item{...}{}
+\item{...}{any number of arguments}
 }
 \value{
 graph of CLT Possion

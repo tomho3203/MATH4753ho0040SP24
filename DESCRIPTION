@@ -14,3 +14,5 @@ BugReports: https://github.com/tomho3203/MATH4753ho0040SP24/issues
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
+Depends: 
+    R (>= 2.10)

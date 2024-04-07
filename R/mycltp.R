@@ -3,9 +3,14 @@
 #' @param n a integer
 #' @param iter a integer
 #' @param lambda a integer
-#' @param ...
+#' @param ... any number of arguments
 #'
 #' @return graph of CLT Possion
+#' @importFrom stats rpois
+#' @importFrom graphics layout
+#' @importFrom graphics curve
+#' @importFrom stats dnorm
+#' @importFrom stats dpois
 #' @export
 #'
 #' @examples
@@ -16,7 +21,7 @@ mycltp=function(n,iter,lambda=10,...){
   y=rpois(n*iter,lambda=lambda)
   ## Place these numbers into a matrix
   ## The columns will correspond to the iteration and the rows will equal the sample size n
-  data=matrix(y,nr=n,nc=iter,byrow=TRUE)
+  data=matrix(y,nrow=n,ncol=iter,byrow=TRUE)
   ## apply the function mean to the columns (2) of the matrix
   ## these are placed in a vector w
   w=apply(data,2,mean)
@@ -31,7 +36,7 @@ mycltp=function(n,iter,lambda=10,...){
   ymax=1.1*ymax
 
   ## Make a suitable layout for graphing
-  layout(matrix(c(1,1,2,3),nr=2,nc=2, byrow=TRUE))
+  layout(matrix(c(1,1,2,3),nrow=2,ncol=2, byrow=TRUE))
 
   ## Now we can make the histogram
   hist(w,freq=FALSE,  ylim=c(0,ymax), col=rainbow(max(w)),
