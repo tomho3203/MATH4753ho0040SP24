@@ -3,6 +3,7 @@
 export(mybin)
 export(myboot2)
 export(mycltp)
+export(mymlbeta)
 export(myncurve)
 export(myplot)
 export(myquad)
