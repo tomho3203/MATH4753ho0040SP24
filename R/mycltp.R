@@ -16,7 +16,7 @@
 #' @examples
 #' mycltp(n=10,iter=10000)
 mycltp=function(n,iter,lambda=10,...){
-
+  #function from lab 8
   ## r-random sample from the Poisson
   y=rpois(n*iter,lambda=lambda)
   ## Place these numbers into a matrix

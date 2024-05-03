@@ -14,7 +14,6 @@
 #' @examples
 #' myncurve(5,10,3)
 myncurve = function(a, mu, sigma){
-  #function from lab 8
   x=NULL
   curve(dnorm(x,mean=mu,sd=sigma), xlim = c(mu-3*sigma, mu + 3*sigma), ylab = "Normal Density")
 
