@@ -1,0 +1,57 @@
+---
+title: "What the package does"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{What the package does}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(MATH4753ho0040SP24)
+```
+
+# mybin Function
+```{r}
+MATH4753ho0040SP24::mybin(iter=100,n=10, p=0.7)
+```
+
+Binomial simulation function that returns a barplot of a binomial simulation based on n, number of iterations, and probability.
+
+# ntickets Function
+```{r}
+MATH4753ho0040SP24::ntickets(400, 0.02, 0.95)
+```
+
+Ticket function that returns a named list containing nd, nc, N, p and gamma - where nd is calculated using the discrete distribution and nc is the same calculated with normal approximation.
+
+# myboot2 Function
+```{r}
+sam=rnorm(25,mean=25,sd=10)
+MATH4753ho0040SP24::myboot2(iter=10000,alpha=0.05,sam, cx=1.5,xlab="mean")
+```
+
+Bootstrap function that returns a number of plots, point and interval estimates and useful output in the form of a list.
+
+# mymlbeta Function
+```{r}
+MATH4753ho0040SP24::mymlbeta(x=rbeta(100,shape1=2,shape2=5),alpha=seq(1,4,length=100), beta=seq(2,8,length=100),lwd=2,labcex=1)
+```
+
+Beta function that returns a beta distribution
+
+# FIREDAM data set
+```{r}
+data(fire)
+head(fire)
+names(fire)
+```
+
+FIREDAM.csv data set is saved into the package and displays the head() and names() functions to test it.

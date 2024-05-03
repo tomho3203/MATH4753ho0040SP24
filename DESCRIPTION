@@ -12,7 +12,10 @@ RoxygenNote: 7.3.1
 URL: https://github.com/tomho3203/MATH4753ho0040SP24
 BugReports: https://github.com/tomho3203/MATH4753ho0040SP24/issues
 Suggests: 
+    knitr,
+    rmarkdown,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Depends: 
     R (>= 2.10)
+VignetteBuilder: knitr
